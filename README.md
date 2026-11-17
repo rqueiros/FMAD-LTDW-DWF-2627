@@ -2,7 +2,7 @@
 
 Repositório público com as resoluções das fichas práticas de **Desenvolvimento Web Front-End**, da Licenciatura em Tecnologias e Desenvolvimento Web da FMAD, no ano letivo **2026/2027**.
 
-As soluções utilizam **Vue 3 e Options API**. Cada pasta contém um projeto independente, com o código necessário e um README com instruções específicas. A ficha 07 utiliza também **Vue Router 4**.
+As soluções utilizam **Vue 3 e Options API**. Cada pasta contém um projeto independente, com o código necessário e um README com instruções específicas. As fichas 07 e 08 utilizam também **Vue Router 4**.
 
 ## Fichas disponíveis
 
@@ -15,6 +15,8 @@ As soluções utilizam **Vue 3 e Options API**. Cada pasta contém um projeto in
 | [Ficha 05](FICHA05/README.md) | Eventos e formulários | Eventos, teclado e rato, `v-model`, validação, referências ao DOM e inscrições. |
 | [Ficha 06](FICHA06/README.md) | Componentes | Props, validação, eventos personalizados, comunicação entre pai e filho e slots. |
 | [Ficha 07](FICHA07/README.md) | Vue Router | Rotas dinâmicas e aninhadas, navegação programática, vistas com nome, redirecionamentos e guardas. |
+| [Ficha 08](FICHA08/README.md) | Gestão de séries | Autenticação, perfis, storage, catálogo, filtros, ordenação, séries vistas e administração com guardas. |
+| [Ficha 09](FICHA09/README.md) | Introdução ao Pinia | Contador, tarefas com getters e actions, e carrinho de compras. |
 
 ## Executar uma ficha
 
@@ -31,6 +33,8 @@ npm run dev
 Abrir no navegador o endereço indicado pelo Vite. Para executar outra ficha, repetir os comandos na respetiva pasta.
 
 Nas fichas 01 a 06, o seletor da aplicação permite alternar entre exercícios independentes. A mudança de exercício repõe o estado. A ficha 07 reúne os exercícios numa aplicação de workshops com navegação entre páginas.
+
+A ficha 08 reúne os exercícios numa aplicação de séries com contas locais e perfis user/admin. O estado usa `data()` e props, sem `reactive`, e o formulário de administração tem campos explícitos. As credenciais de demonstração e os percursos de teste estão no respetivo README.
 
 ## Compilar e pré-visualizar
 
@@ -50,4 +54,4 @@ O primeiro comando gera a versão de produção em `dist`; o segundo permite pr�
 - Usar o Vue DevTools para inspecionar e alterar o estado dos componentes e a consola do navegador para observar eventos e hooks.
 - A configuração do Vite utiliza polling para evitar atualizações repetidas em unidades sincronizadas, como a pCloud.
 - Algumas imagens da ficha 03 são obtidas de um serviço externo e requerem ligação à Internet.
-- Ao alojar a ficha 07 em produção, configurar o servidor para devolver `index.html` nos caminhos da SPA, pois utiliza `createWebHistory`.
+- Ao alojar as fichas 07 e 08 em produção, configurar o servidor para devolver `index.html` nos caminhos da SPA, pois utilizam `createWebHistory`.

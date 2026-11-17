@@ -1,0 +1,1 @@
+<template><section class="vazio"><p class="sobretitulo">Erro 404</p><h1>Página não encontrada</h1><p>O caminho <code>{{ $route.path }}</code> não corresponde a uma página.</p><RouterLink class="botao" :to="{ name: 'inicio' }">Regressar ao início</RouterLink></section></template>
